@@ -1,0 +1,155 @@
+
+.phone {
+    position: absolute;
+    width: 300px;
+    height: 570px;
+    top:12vh;
+    left: 27vw;
+    font-size: 80%;
+    border: .8rem solid $white;
+    border-radius: 30px;
+    background-color: $light-grayish-violet;
+    box-shadow: 0px 0px 100px -12px rgba(0,0,0,0.47);
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+
+    @include response(tab-landscape) {
+        left: 16vw;
+        width: 290px;
+    }
+
+    @include response(tab-portait) {
+        width: 250px;
+        height: 470px;
+        top: 23vh;
+        left: 10vw;
+        font-size: 65%;
+    }
+
+    @include response(phone) {
+        top: 60px;
+        left: 20vw;
+    }
+}
+
+.textarea {
+    top: 35vh;
+    right: 13vw;
+    position: absolute;
+    width: 33vw;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    @include response(tab-landscape) {
+        right: 11vw;
+    }
+
+    @include response(tab-portait) {
+        right: 15vw;
+        height: 130px;
+    }
+
+    @include response(phone) {
+        top: 580px;
+        left: 18vw;
+        width: 266px;
+
+        align-items: center;
+    }
+    
+
+    &__title {
+        width: max-content;
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 45px;
+        color: $very-dark-desaturated-violet;
+
+
+        @include response(tab-landscape) {
+            font-size: 40px;
+        }
+
+        @include response(tab-portait) {
+            margin-bottom: 1rem;
+            font-size: 31px;
+        }
+
+        @include response(phone) {
+            font-size: 38px;
+        }
+    }
+
+    &__par {
+        line-height: 1.6;
+        color: $dark-grayish-violet;
+
+        @include response(tab-landscape) {
+            font-size: 90%;
+        }
+
+        @include response(tab-portait) {
+            font-size: 85%;
+        }
+
+        @include response(phone) {
+            text-align: center;
+            font-size: 80%;
+        }
+    }
+    
+}
+
+.colorway {
+    position: absolute;
+    height: 756px;
+    width: 40%;
+
+    &__top {     
+        top: -80px;    
+        left: -120px;
+        background-image: linear-gradient(20deg, $light-violet, $light-magenta);
+        border-radius: 0 0 50% 50%;
+        z-index: -1;
+
+        @include response(tab-landscape) {
+            left: -18%;
+        }
+
+        @include response(phone) {
+            height: 55vh;
+            width: 80%;
+            left: -38%;
+
+        }
+    }
+
+    &__bottom {   
+        right: -250px;
+        top: 200px;
+        border-radius: 50% 50% 0 0;
+        background-color: $very-light-magenta;
+        opacity: .1;
+        z-index: -1;
+        overflow: hidden;
+
+        @include response(tab-landscape) {
+            right: -24%;
+        }
+
+        @include response(phone) {
+            top: 50vh;
+            width: 80%;
+            height: 500px;
+            left: 200px;
+
+        }
+    }
+    
+
+
+}
