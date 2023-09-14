@@ -30,7 +30,7 @@
 
     @include response(phone) {
         top: 60px;
-        left: 20vw;
+        left: 16vw;
     }
 }
 
@@ -55,7 +55,7 @@
 
     @include response(phone) {
         top: 580px;
-        left: 18vw;
+        left: 15vw;
         width: 266px;
 
         align-items: center;
@@ -105,11 +105,11 @@
 }
 
 .colorway {
-    position: absolute;
+    position: fixed;
     height: 756px;
-    width: 40%;
+    width: 600px;
 
-    &__top {     
+    &__top {   
         top: -80px;    
         left: -120px;
         background-image: linear-gradient(20deg, $light-violet, $light-magenta);
@@ -117,35 +117,32 @@
         z-index: -1;
 
         @include response(tab-landscape) {
-            left: -18%;
+            left: -300px;
+        }
+
+        @include response(tab-portait) {
+            left: -390px;
         }
 
         @include response(phone) {
-            height: 55vh;
-            width: 80%;
-            left: -38%;
+            height: 65vh;
+            width: 570px;
 
         }
     }
 
     &__bottom {   
-        right: -250px;
-        top: 200px;
+        right: -200px;
+        top: 250px;
         border-radius: 50% 50% 0 0;
         background-color: $very-light-magenta;
+        clip-path: inset(0 33% 15% 0);
         opacity: .1;
         z-index: -1;
-        overflow: hidden;
-
-        @include response(tab-landscape) {
-            right: -24%;
-        }
 
         @include response(phone) {
-            top: 50vh;
-            width: 80%;
-            height: 500px;
-            left: 200px;
+            top: 45vh;
+            width: 430px;
 
         }
     }

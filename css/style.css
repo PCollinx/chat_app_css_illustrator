@@ -310,7 +310,7 @@ body {
 @media (max-width: 37.5em) {
   .phone {
     top: 60px;
-    left: 20vw;
+    left: 16vw;
   }
 }
 
@@ -337,7 +337,7 @@ body {
 @media (max-width: 37.5em) {
   .textarea {
     top: 580px;
-    left: 18vw;
+    left: 15vw;
     width: 266px;
     align-items: center;
   }
@@ -387,9 +387,9 @@ body {
 }
 
 .colorway {
-  position: absolute;
+  position: fixed;
   height: 756px;
-  width: 40%;
+  width: 600px;
 }
 .colorway__top {
   top: -80px;
@@ -400,36 +400,33 @@ body {
 }
 @media (max-width: 75em) {
   .colorway__top {
-    left: -18%;
+    left: -300px;
+  }
+}
+@media (max-width: 56.25em) {
+  .colorway__top {
+    left: -390px;
   }
 }
 @media (max-width: 37.5em) {
   .colorway__top {
-    height: 55vh;
-    width: 80%;
-    left: -38%;
+    height: 65vh;
+    width: 570px;
   }
 }
 .colorway__bottom {
-  right: -250px;
-  top: 200px;
+  right: -200px;
+  top: 250px;
   border-radius: 50% 50% 0 0;
   background-color: hsl(289, 100%, 72%);
+  clip-path: inset(0 33% 15% 0);
   opacity: 0.1;
   z-index: -1;
-  overflow: hidden;
-}
-@media (max-width: 75em) {
-  .colorway__bottom {
-    right: -24%;
-  }
 }
 @media (max-width: 37.5em) {
   .colorway__bottom {
-    top: 50vh;
-    width: 80%;
-    height: 500px;
-    left: 200px;
+    top: 45vh;
+    width: 430px;
   }
 }
 
